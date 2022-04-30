@@ -9,10 +9,10 @@ else
 fi
 
 echo "Starting "$ENV" container"
-/usr/local/bin/docker-compose --project-name=$ENV up -d
+docker-compose --project-name=$ENV up -d
 
 echo "Waiting..."
 sleep 5s
 
 echo "Stopping "$OLD" container"
-/usr/local/bin/docker-compose --project-name=$OLD stop
+docker-compose --project-name=$OLD stop

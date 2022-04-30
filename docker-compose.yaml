@@ -1,14 +1,9 @@
 version: '2'
 services:
   app1:
-    image: python_docker_jenkins:latest
-  #   ports:
-  #     - 5001:5001
-  #   environment:
-  #     - NVIDIA_VISIBLE_DEVICES=0
-  # app2:
-  #   image: incident_docker2:latest
-  #   ports:
-  #     - 5002:5002
-  #   environment:
-  #     - NVIDIA_VISIBLE_DEVICES=0
+    image: flask_docker:latest
+    # ports:
+    #    - '3000:3000'
+    # devices:
+    #   - '/dev/video0:/dev/video0'
+    
