@@ -1,9 +1,9 @@
 version: '2'
 services:
   app1:
-    image: flask_docker:latest
-    # ports:
-    #    - '3000:3000'
+    image: python_docker_jenkins:latest
+    ports:
+        - "3000:3000"
     # devices:
     #   - '/dev/video0:/dev/video0'
     
