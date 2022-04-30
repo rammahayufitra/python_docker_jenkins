@@ -3,7 +3,7 @@ services:
   app1:
     image: python_docker_jenkins:latest
     ports:
-        - "3000:3000"
+        - "3001:3000"
     # devices:
     #   - '/dev/video0:/dev/video0'
     
