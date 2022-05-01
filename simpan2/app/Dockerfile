@@ -5,12 +5,11 @@ RUN apt-get install ffmpeg libsm6 libxext6  -y
 
 WORKDIR /app 
 
-COPY requirements.txt . 
+COPY . . 
 RUN pip3 install -r requirements.txt 
 
-COPY /app .
+# EXPOSE 5000
 
-EXPOSE 3000
+# CMD ["python", "main.py"]
 
-CMD ["python", "main.py"]
-
+CMD gunicorn --bind 0.0.0.0:5000 wsgi:app
