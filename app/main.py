@@ -3,13 +3,14 @@ import cv2
 
 app = Flask(__name__)
 
-camera = cv2.VideoCapture('/home/delameta/ramma/docker/pythondockerjenkins/python_docker_jenkins/video.avi')  
+
+camera = cv2.VideoCapture('./video.avi')  
 
 
 def getFrames(): 
     while True:
         success, frame = camera.read()
-        frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+        # frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         if not success:
             break
         else:
