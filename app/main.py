@@ -3,7 +3,7 @@ import cv2
 
 app = Flask(__name__)
 
-camera = cv2.VideoCapture('rtsp://Anonymous:Anonymous@192.168.1.11:554')  
+camera = cv2.VideoCapture('/home/delameta/ramma/docker/pythondockerjenkins/python_docker_jenkins/video.avi')  
 
 
 def getFrames(): 

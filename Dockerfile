@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . . 
 RUN pip3 install -r requirements.txt 
 
-EXPOSE 5001
+EXPOSE 5000
 
 
 
