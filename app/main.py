@@ -4,7 +4,7 @@ import cv2
 app = Flask(__name__)
 
 
-camera = cv2.VideoCapture('./video.avi')  
+camera = cv2.VideoCapture('./video.mp4')  
 
 
 def getFrames(): 
